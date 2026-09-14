@@ -339,13 +339,13 @@ class Arquivo implements \Cnab\Remessa\IArquivo
             // repitam o código de desconto informado no Segmento P.
             $codigoDesconto = $detalhe->segmento_p->codigo_desconto_1;
 
-            $detalhe->segmento_r->codigo_desconto_2 = $codigoDesconto;
-            $detalhe->segmento_r->data_desconto_2   = 0;
-            $detalhe->segmento_r->valor_desconto_2  = 0;
+            $detalhe->segmento_r->codigo_desconto_02 = $codigoDesconto;
+            $detalhe->segmento_r->data_desconto_02   = 0;
+            $detalhe->segmento_r->valor_desconto_02  = 0;
 
-            $detalhe->segmento_r->codigo_desconto_3 = $codigoDesconto;
-            $detalhe->segmento_r->data_desconto_3   = 0;
-            $detalhe->segmento_r->valor_desconto_3  = 0;
+            $detalhe->segmento_r->codigo_desconto_03 = $codigoDesconto;
+            $detalhe->segmento_r->data_desconto_03   = 0;
+            $detalhe->segmento_r->valor_desconto_03  = 0;
         }
         if ($boleto['valor_multa'] > 0) {
             $detalhe->segmento_r->codigo_multa = 1;
